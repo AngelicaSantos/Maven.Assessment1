@@ -11,8 +11,13 @@ public class MultiplesDeleter {
      */
     public Integer[] deleteEvens(Integer[] ints) {
 
-            return null;
-
+        int count = 0;
+        for(int i = 1; i < ints.length; i++)
+        {
+            if(ints[i] % 2 == 1)
+                count++;
+        }
+        return ints;
     }
 
 

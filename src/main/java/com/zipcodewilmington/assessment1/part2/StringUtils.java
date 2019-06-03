@@ -12,7 +12,6 @@ public class StringUtils {
      */
     public static String[] getWords(String sentence) {
 
-
         return null;
     }
 
@@ -62,18 +61,23 @@ public class StringUtils {
     public static String reverseFirstWordThenCamelCase(String sentence) {
 
         int b = sentence.indexOf(' ');
-        String word = sentence.substring(0,b);
+         String word = sentence.substring(0,b);
         String rest = sentence.substring(b);
 
-       String opposite= "";
-       for(int i=word.length()-1;i<1;i++) {
-           opposite+= word.charAt(i);
-       }
+        String opposite = "";
+        for (int i= word.length()-1;i>=0;i--) {
+            opposite += word.charAt(i);
+        }
+
         opposite.toLowerCase();
         opposite = opposite.substring(0, 1).toUpperCase() + opposite.substring(1).toLowerCase();
 
+
+
         return opposite;
     }
+
+
 
 
     /**
@@ -84,8 +88,12 @@ public class StringUtils {
      */
     public static String removeCharacterAtIndex(String str, int index) {
 
+        return str.substring(0,index) + str.substring(index + 1);
 
-        return null;
+
+
+
+
     }
 
 }

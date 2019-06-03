@@ -42,6 +42,8 @@ public class CatTest {
         // Then
         Assert.assertEquals(expectedAge, actualAge);
         Assert.assertEquals(expectedName, actualName);
+
+
     }
 
 

@@ -11,13 +11,8 @@ public class IntegerUtils {
      * @return the sum of all integers between 0 and not including `n`
      */
     public static Integer getSumOfN(Integer n) {
-        int sum = 0; // initialize the result
-        // compute the sum of digits from 0 and not including 'n'
-        for (int i=0; i<=i;i++) {
-            sum = sum + i;
-        }
-        return sum;
 
+       return null;
     }
 
     /**
